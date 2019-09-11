@@ -6,13 +6,25 @@
 </head>
 <body>
 
-	<form action="payelectricity" method="post">
-		<p>Previous reading </p> <input type="number" name="previous" required/>
-		<p>Current reading </p> <input type="number" name="current" required/>
-		<p>State </p> <input type="text" name="state"/>
-		<p>Type </p> <input type="text" name="type"/>
+	<form action="tspayelectricity" method="post">
+		Previous reading :<input type="number" name="previous" required/><br>
+		Current reading :<input type="number" name="current" required/><br> 
+		State : <input type="text" name="state" value ="TS" readonly="true"/><br>
+		Type :<input type="text" name="type"/><br>
+		
+		<input type="submit" value="Submit">
+		<br><br>
+	</form>
+	
+		<form action="keralapayelectricity" method="post">
+		Previous reading : <input type="number" name="previous" required/><br>
+		Current reading: <input type="number" name="current" required/><br>
+		State :<input type="text" name="state" value="Kerala" readonly="true"/><br>
+		Type :<input type="text" name="type"/><br>
 		
 		<input type="submit" value="Submit">
 	</form>
+	
+	
 </body>
 </html>
